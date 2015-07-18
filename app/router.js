@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('forecasts', { path: '/' });
+  this.route('forecasts');
 });
 
 export default Router;
