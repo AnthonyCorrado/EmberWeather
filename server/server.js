@@ -30,10 +30,10 @@ app.get('/api/',function(req,res) {
 app.get('/api/forecasts', function(req,res) {
   ForecastModel.find({},function(err,docs) {
     if(err) {
-      res.send(err);
+      res.send({error:err});
     }
     else {
-      res.send(docs);
+      res.send({forecast:docs});
     }
   });
 });
