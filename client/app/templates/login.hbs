@@ -1,3 +1,30 @@
-<h3>Login Route</h3>
-<button {{action 'googleLogin'}}>Login with Google</button>
 {{outlet}}
+<div class="landing-container custom-font">
+  <div class="row big-pad-sides">
+    <div class="col-xs-2"></div>
+    <div class="btn btn-lg btn-block custom-btn col-xs-8 text-center">
+      <span class="text-inset">Login with Email</span>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+
+  <div id="login-component">
+    {{login-component forecast=forecast}}
+  </div>
+
+  <div class="row big-pad-sides">
+    <div class="col-xs-2"></div>
+    <div class="btn btn-lg btn-block custom-btn col-xs-8 text-center" {{action 'googleLogin'}}>
+      <span class="text-inset">Login with Google</span>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+
+  <div class="row big-pad-sides">
+    <div class="col-xs-2"></div>
+    <div class="btn btn-lg btn-block custom-btn col-xs-8 text-center">
+      <span class="text-inset">{{#link-to 'forecasts'}}Login as Guest{{/link-to}}</span>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+</div>

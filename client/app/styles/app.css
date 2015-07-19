@@ -2,6 +2,9 @@
 .global-pad {
   padding: 3px;
 }
+.big-pad-sides {
+  padding: 0 10px;
+}
 .global-margin {
   margin: 5px;
 }
@@ -11,6 +14,25 @@
 .custom-font {
   font-family: 'Open Sans', sans-serif;
 }
+a:link {
+    color: #AAA;
+}
+
+/* visited link */
+a:visited {
+    color: #AAA;
+}
+
+/* mouse over link */
+a:hover {
+    color: #AAA;
+}
+
+/* selected link */
+a:active {
+    color: rgba(100, 50, 50, 1);
+    text-decoration: none;
+}
 
 /* --------------- */
 .container-fluid {
@@ -18,12 +40,29 @@
   color: #5D5D5D;
 }
 .title-text {
-  color: #CCC;
+  color: #AAA;
   padding: 10px 4px;
+}
+.landing-container {
+  background-color: #000;
+  border: 1px solid #555;
+  padding: 20px; 
 }
 .banner-color {
   background-color: rgba(50, 26, 26, 1);
   border: 2px black;
+}
+.custom-btn {
+  padding: 16px 0;
+  background-color: rgba(50, 26, 26, 1);
+  color: #AAA;
+  font-size: 15px;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(50, 50, 50, 1);
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-right: 1px solid rgba(250, 250, 250, 0.2);
+  border-left: 1px solid rgba(100, 100, 100, 0.2);
+  text-shadow: 0px 1px rgba(100, 50, 50, 1);
 }
 
 .fc-comp-container {
