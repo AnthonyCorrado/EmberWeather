@@ -1,0 +1,68 @@
+/* globals */
+.global-pad {
+  padding: 3px;
+}
+.global-margin {
+  margin: 5px;
+}
+.font-large {
+  font-size: 30px;
+}
+.custom-font {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* --------------- */
+.container-fluid {
+  background-color: #000;
+  color: #5D5D5D;
+}
+.title-text {
+  color: #CCC;
+  padding: 10px 4px;
+}
+.banner-color {
+  background-color: rgba(50, 26, 26, 1);
+  border: 2px black;
+}
+
+.fc-comp-container {
+  background-color: #000;
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  font-family: weathericons;
+}
+
+.fc-comp {
+  background-color: #171717;
+  border: 1px solid #000;
+}
+
+i {
+  font-size: 35px;
+  margin-left: 5px;
+  padding: 4px;
+}
+.wi-day-sunny {
+  color: yellow;
+}
+.wi-day-showers {
+  color: blue;
+}
+.wi-day-storm-showers {
+  color: gray;
+}
+.wi-cloudy {
+  color: lightgray;
+}
+.wi-day-snow {
+  color: blue;
+}
+.box-shadow {
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(180, 85, 85, 1);
+  -moz-box-shadow: 3px 3px 2px 0px rgba(180, 85, 85, 1);
+  box-shadow: 3px 3px 2px 0px rgba(180, 85, 85, 1);
+}

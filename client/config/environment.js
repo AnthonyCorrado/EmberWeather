@@ -20,12 +20,13 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
-      'font-src': "'self'",
       'connect-src': "'self'",
       'img-src': "'self'",
       'report-uri':"'localhost'",
       'style-src': "'self' 'unsafe-inline'",
-      'frame-src': "'none'"
+      'frame-src': "'none'",
+      'font-src': "'self' data: fonts.gstatic.com",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com"
     }
   };
 

@@ -1,0 +1,13 @@
+<li class="col-xs-6 global-pad">
+  <div class="city-container fc-comp">
+    <p class="text-center title-text banner-color">City {{forecast.cityName}}</p>
+    <div class="row">
+      <div class="col-xs-6"> <i {{bind-attr class=":wi forecast.icon"}}></i></div>
+      <div class="col-xs-6 font-large custom-font"> {{forecast.currentTemp}}˚</div>
+    </div>
+
+    <div class="custom-font">Hi {{forecast.hiTemp}}</div>
+    <div class="custom-font">Lo {{forecast.loTemp}}</div>
+    <p class="text-center custom-font">Today {{date}}</p>
+  </div>
+</li>

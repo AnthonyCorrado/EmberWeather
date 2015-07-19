@@ -5,6 +5,12 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
+  app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  app.import('vendor/css/weather-icons.css');
+  app.import('vendor/font/weathericons-regular-webfont.woff', {
+    destDir: 'fonts'
+  });
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

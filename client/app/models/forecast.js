@@ -5,87 +5,89 @@ export default DS.Model.extend({
   hiTemp: DS.attr('number'),
   loTemp: DS.attr('number'),
   currentTemp: DS.attr('number'),
+  icon: DS.attr('string'),
+  date: DS.attr('number')
 }).reopenClass({
   FIXTURES: [
     {
         "id": 1,
         "cityId": 1,
         "cityName": "Cancela",
-        "icon": "gnelson0",
+        "icon": "wi-day-sunny",
         "currentTemp": 73,
         "hiTemp": 86,
         "loTemp": 65,
-        "date": "2014-11-30T01:17:35Z"
+        "date": 4678353853485873
     },
     {
         "id": 2,
         "cityId": 2,
         "cityName": "Hasan",
-        "icon": "jrichardson1",
+        "icon": "wi-day-sunny",
         "currentTemp": 76,
         "hiTemp": 85,
         "loTemp": 70,
-        "date": "2015-05-08T18:27:55Z"
+        "date": 4678353853485873
     },
     {
         "id": 3,
         "cityId": 3,
         "cityName": "Gannan",
-        "icon": "jdixon2",
+        "icon": "wi-day-storm-showers",
         "currentTemp": 80,
         "hiTemp": 77,
         "loTemp": 65,
-        "date": "2015-03-27T00:54:08Z"
+        "date": 4678353853485873
     },
     {
         "id": 4,
         "cityId": 4,
         "cityName": "Goba",
-        "icon": "ebell3",
+        "icon": "wi-cloudy",
         "currentTemp": 76,
         "hiTemp": 76,
         "loTemp": 67,
-        "date": "2015-06-20T19:29:25Z"
+        "date": 4678353853485873
     },
     {
         "id": 5,
         "cityId": 5,
         "cityName": "Portelinha",
-        "icon": "jbailey4",
+        "icon": "wi-day-showers",
         "currentTemp": 74,
         "hiTemp": 78,
         "loTemp": 71,
-        "date": "2015-04-29T01:36:19Z"
+        "date": 4678353853485873
     },
     {
         "id": 6,
         "cityId": 6,
         "cityName": "Acacías",
-        "icon": "klong5",
+        "icon": "wi-day-storm-showers",
         "currentTemp": 70,
         "hiTemp": 87,
         "loTemp": 65,
-        "date": "2015-01-24T22:46:56Z"
+        "date": 4678353853485873
     },
     {
         "id": 7,
         "cityId": 7,
         "cityName": "Boavista",
-        "icon": "mcarter6",
+        "icon": "wi-day-showers",
         "currentTemp": 74,
         "hiTemp": 78,
         "loTemp": 67,
-        "date": "2014-11-16T23:38:41Z"
+        "date": 4678353853485873
     },
     {
         "id": 8,
         "cityId": 8,
         "cityName": "Pital",
-        "icon": "stucker7",
+        "icon": "wi-cloudy",
         "currentTemp": 65,
         "hiTemp": 89,
         "loTemp": 71,
-        "date": "2014-09-17T04:30:13Z"
+        "date": 4678353853485873
     }
 ]
-})
+});
