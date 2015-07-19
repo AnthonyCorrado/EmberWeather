@@ -8,6 +8,8 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('forecasts', { path: '/' });
   this.route('forecasts');
+  this.route('protected');
+  this.route('login');
 });
 
 export default Router;
