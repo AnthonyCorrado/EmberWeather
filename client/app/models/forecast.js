@@ -1,6 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
+  cityId: DS.attr('number'),
   cityName: DS.attr('string'),
   hiTemp: DS.attr('number'),
   loTemp: DS.attr('number'),
