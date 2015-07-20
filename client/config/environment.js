@@ -30,17 +30,20 @@ module.exports = function(environment) {
     }
   };
 
-  ENV['torii'] = {
-    providers: {
-      'google-oauth2': {
-        apiKey: 'config.googleClientId',
-        scope: 'profile',
-        redirectUri: 'http://localhost:4200/forecasts'
-      }
-    }
-  };
-
   if (environment === 'development') {
+
+    ENV['simple-auth-oauth2'] = {
+      serverTokenEndpoint: 'http//localhost:3000/token'
+    },
+    ENV['torii'] = {
+      providers: {
+        'google-oauth2': {
+          apiKey: 'config.GoogleClientId',
+          scope: 'email',
+          redirectUri: 'http://localhost:4200/forecasts',
+        }
+      }
+    },
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     ENV.APP.LOG_TRANSITIONS = true;
