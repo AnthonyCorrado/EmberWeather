@@ -10,7 +10,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-mongoose.connect('mongodb://localhost/emberWeatherData');
+mongoose.connect('');
 
 var forecastSchema = new mongoose.Schema({
   cityName: 'string',
